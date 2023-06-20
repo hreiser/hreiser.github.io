@@ -1,9 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
 <loc>https://hreiser.github.io/</loc>
 </url>
 <url>
+<loc>https://hreiser.github.io/markdown/</loc>
+</url>
+<url>
 <loc>https://hreiser.github.io/publications/</loc>
+</url>
+<url>
+<loc>https://hreiser.github.io/sitemap/</loc>
+</url>
+<url>
+<loc>https://hreiser.github.io/terms/</loc>
 </url>
 <url>
 <loc>https://hreiser.github.io/bibtex/bessani08forever/</loc>
@@ -328,5 +338,9 @@
 </url>
 <url>
 <loc>https://hreiser.github.io/bibtex/dangl2023retrofitting/</loc>
+</url>
+<url>
+<loc>https://hreiser.github.io/google80e108973776822e.html</loc>
+<lastmod>2023-06-20T12:51:08-07:00</lastmod>
 </url>
 </urlset>
