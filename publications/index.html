@@ -115,10 +115,16 @@
 <meta name="theme-color" content="#ffffff">
 <link rel="stylesheet" href="https://hreiser.github.io/assets/css/academicons.css"/>
 
-
-<!-- Support for MatJax -->
-<script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML' async></script>
 
 <!-- end custom head snippets -->
 
@@ -172,73 +178,56 @@
 
   <div class="author__content">
     <h3 class="author__name">Dr. Hans P. Reiser</h3>
-    
     <p class="author__bio">Associate Professor<br>Reykjavik University</p>
   </div>
 
   <div class="author__urls-wrapper">
     <button class="btn btn--inverse">Follow</button>
     <ul class="author__urls social-icons">
-      <!-- Font Awesome icons / Biographic information  -->
       
-        <li class="author__desktop"><i class="fa-solid fa-location-dot icon-pad-right" aria-hidden="true"></i>Reykjavik, Iceland</li>
-      
-      
-      
-      
-        <li><a href="mailto:hansr at ru.is"><i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i>Email</a></li>
-      
-
-      <!-- Font Awesome and Academicons icons / Academic websites -->
-            
-      
-        <li><a href="https://scholar.google.com/citations?user=Ki7gD2wAAAAJ"><i class="ai ai-google-scholar icon-pad-right"></i>Google Scholar</a></li>
+        <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> Reykjavik, Iceland</li>
       
       
       
       
-        <li><a href="https://orcid.org/0000-0002-2815-5747"><i class="ai ai-orcid ai-fw icon-pad-right"></i>ORCID</a></li>
-      
-                              
-      
-        <li><a href="https://www.researchgate.net/profile/Hans-Reiser"><i class="fab fa-fw fa-researchgate icon-pad-right" aria-hidden="true"></i>ResearchGate</a></li>
-      
-
-      <!-- Font Awesome icons / Repositories and software development -->
-      
-            
-            
-      
-            
-            
-
-      <!-- Font Awesome icons / Social media -->
+        <li><a href="mailto:hansr at ru.is"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i> Email</a></li>
       
       
-            
-      
-                  
-                  
-      
-            
-            
-      
-        <li><a href="https://www.linkedin.com/in/hans-p-reiser-8994769"><i class="fab fa-fw fa-linkedin icon-pad-right" aria-hidden="true"></i>LinkedIn</a></li>
-            
-      
-            
-                  
-            
-      
-            
-            
-      
-              
-      
-                      
+       
+        <li><a href="https://www.researchgate.net/profile/Hans-Reiser"><i class="fab fa-fw fa-researchgate" aria-hidden="true"></i> ResearchGate</a></li>
       
       
-            
+      
+      
+      
+        <li><a href="https://www.linkedin.com/in/hans-p-reiser-8994769"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        <li><a href="https://scholar.google.com/citations?user=Ki7gD2wAAAAJ"><i class="fas fa-fw fa-graduation-cap"></i> Google Scholar</a></li>
+      
+      
+      
+        <li><a href="https://orcid.org/0000-0002-2815-5747"><i class="ai ai-orcid-square ai-fw"></i> ORCID</a></li>
+      
+      
+      
     </ul>
   </div>
 </div>
@@ -252,6 +241,23 @@
       <h1 class="page__title">Publications</h1>
     
     
+<h2 class="bibliography">2026</h2>
+<ol class="bibliography"><li><div class="text-justify">
+    <span id="gogada2026optilog">Hanish Gogada, Christian Berger, Leander Jehl, Hans P. Reiser, and Hein Meling. <b>OptiLog: Assigning Roles in Byzantine Consensus</b>. In: <i>Proc. of the 21th European Conference on Computer Systems (EuroSys’2026) – accepted for publication</i> 2026.</span>
+</div>
+
+
+
+<div>
+    <span></span>
+    
+    
+    
+    <span><a href="../bibtex/gogada2026optilog/">BibTeX</a> </span>
+</div>
+
+
+<a class="details" href="/bibtex/gogada2026optilog/"></a></li></ol>
 <h2 class="bibliography">2025</h2>
 <ol class="bibliography"><li><div class="text-justify">
     <span id="fellicious2025membert">Christofer Fellicious, Mehdi Ben Amor, Johannes Garstenauer, Jelena Mitrović, Hans P. Reiser, and Michael Granitzer. <b>MemBERT: Foundation model for memory forensics</b>. In: <i>Proceedings of the 40th ACM/SIGAPP Symposium on Applied Computing</i>, pp. 1772–1779, Association for Computing Machinery, New York, NY, USA, 2025.</span>
@@ -270,7 +276,23 @@
 </div>
 
 
-<a class="details" href="/bibtex/fellicious2025membert/"></a></li></ol>
+<a class="details" href="/bibtex/fellicious2025membert/"></a></li>
+<li><div class="text-justify">
+    <span id="niku2025evaluating">Niku Waltteri Saulinpoika Nuutinen, Miguel Faísco, Milan Petrusic, Ibéria Medeiros, and Hans P. Reiser. <b>Evaluating eBPF as an Alternative to Virtual Machine Introspection for High-Interaction Honeypot Implementation</b>. In: <i>Proc. of the 14th Latin-American Symposium on Dependable and Secure Computing (LADC 2025) – accepted for publication</i> 2025.</span>
+</div>
+
+
+
+<div>
+    <span></span>
+    
+    
+    
+    <span><a href="../bibtex/niku2025evaluating/">BibTeX</a> </span>
+</div>
+
+
+<a class="details" href="/bibtex/niku2025evaluating/"></a></li></ol>
 <h2 class="bibliography">2024</h2>
 <ol class="bibliography"><li><div class="text-justify">
     <span id="berger2024exploring">Christian Berger, Sadok Ben Toumia, and Hans P. Reiser. <b>Exploring Scalability of BFT Blockchain Protocols through Network Simulations</b>. <i>Form. Asp. Comput.</i>, 2024.</span>
@@ -327,13 +349,15 @@
 
 <a class="details" href="/bibtex/dangl2024active/"></a></li>
 <li><div class="text-justify">
-    <span id="berger2024chasing">Christian Berger, Lívio Rodrigues, Hans P. Reiser, Vinicius Cogo, and Alysson Bessani. <b>Chasing Lightspeed Consensus: Fast Wide-Area Byzantine Replication with Mercury</b>. In: <i>Proceedings of the 25th ACM/IFIP Int. Middleware Conference (Middleware 2024)</i> 2024.</span>
+    <span id="berger2024chasing">Christian Berger, Lívio Rodrigues, Hans P. Reiser, Vinicius Cogo, and Alysson Bessani. <b>Chasing Lightspeed Consensus: Fast Wide-Area Byzantine Replication with Mercury</b>. In: <i>Proceedings of the 25th ACM/IFIP Int. Middleware Conference (Middleware 2024)</i>, pp. 158–171, ACM, 2024.</span>
 </div>
 
 
 
 <div>
     <span></span>
+    
+    <span><a href="http://doi.org/10.1145/3652892.3700756">doi</a></span>
     
     
     
@@ -421,7 +445,7 @@
 
 <a class="details" href="/bibtex/dangl2023retrofitting/"></a></li>
 <li><div class="text-justify">
-    <span id="eichhammer2023selfforming">Philipp Eichhammer and Hans P. Reiser. <b>A Self-Forming Community Approach for Intrusion Detection in Heterogeneous Networks</b>. In: <i>Proc. of the 28th Nordic Conference on Secure IT Systems (NordSec) – accepted for publication</i> 2023.</span>
+    <span id="eichhammer2023selfforming">Philipp Eichhammer and Hans P. Reiser. <b>A Self-Forming Community Approach for Intrusion Detection in Heterogeneous Networks</b>. In: <i>Proc. of the 28th Nordic Conference on Secure IT Systems (NordSec)</i> 2023.</span>
 </div>
 
 
