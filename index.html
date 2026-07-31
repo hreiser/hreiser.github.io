@@ -117,16 +117,10 @@
 <meta name="theme-color" content="#ffffff">
 <link rel="stylesheet" href="https://hreiser.github.io/assets/css/academicons.css"/>
 
-<script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    tex2jax: {
-      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-      processEscapes: true
-    }
-  });
-</script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML' async></script>
+
+<!-- Support for MatJax -->
+<script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 <!-- end custom head snippets -->
 
@@ -176,62 +170,79 @@
 
   <div class="author__avatar">
     
-    	<img src="https://hreiser.github.io/images/hpr.jpg" class="author__avatar" alt="Dr. Hans P. Reiser">
+    	<img src="https://hreiser.github.io/images/hpr.jpg" class="author__avatar" alt="Hans P. Reiser">
     
   </div>
 
   <div class="author__content">
-    <h3 class="author__name">Dr. Hans P. Reiser</h3>
-    <p class="author__bio">Associate Professor<br>Reykjavik University</p>
+    <h3 class="author__name">Hans P. Reiser</h3>
+    
+    <p class="author__bio">Professor<br>University of Passau</p>
   </div>
 
   <div class="author__urls-wrapper">
     <button class="btn btn--inverse">Follow</button>
     <ul class="author__urls social-icons">
+      <!-- Font Awesome icons / Biographic information  -->
       
-        <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> Reykjavik, Iceland</li>
-      
-      
-      
-      
-        <li><a href="mailto:hansr at ru.is"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i> Email</a></li>
-      
-      
-       
-        <li><a href="https://www.researchgate.net/profile/Hans-Reiser"><i class="fab fa-fw fa-researchgate" aria-hidden="true"></i> ResearchGate</a></li>
+        <li class="author__desktop"><i class="fa-solid fa-location-dot icon-pad-right" aria-hidden="true"></i>Passau, Germany</li>
       
       
       
       
+        <li><a href="mailto:hans.reiser@uni-passau.de"><i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i>Email</a></li>
       
-        <li><a href="https://www.linkedin.com/in/hans-p-reiser-8994769"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+
+      <!-- Font Awesome and Academicons icons / Academic websites -->
+            
       
-      
-      
-      
-      
-      
-      
+        <li><a href="https://scholar.google.com/citations?user=Ki7gD2wAAAAJ"><i class="ai ai-google-scholar icon-pad-right"></i>Google Scholar</a></li>
       
       
       
       
+        <li><a href="https://orcid.org/0000-0002-2815-5747"><i class="ai ai-orcid ai-fw icon-pad-right"></i>ORCID</a></li>
+      
+                              
+      
+        <li><a href="https://www.researchgate.net/profile/Hans-Reiser"><i class="fab fa-fw fa-researchgate icon-pad-right" aria-hidden="true"></i>ResearchGate</a></li>
+      
+
+      <!-- Font Awesome icons / Repositories and software development -->
+      
+            
+            
+      
+            
+            
+
+      <!-- Font Awesome icons / Social media -->
       
       
+            
+      
+                  
+                  
+      
+            
+            
+      
+        <li><a href="https://www.linkedin.com/in/hans-p-reiser-8994769"><i class="fab fa-fw fa-linkedin icon-pad-right" aria-hidden="true"></i>LinkedIn</a></li>
+            
+      
+            
+                  
+            
+      
+            
+            
+      
+              
+      
+                      
       
       
-      
-      
-      
-      
-        <li><a href="https://scholar.google.com/citations?user=Ki7gD2wAAAAJ"><i class="fas fa-fw fa-graduation-cap"></i> Google Scholar</a></li>
-      
-      
-      
-        <li><a href="https://orcid.org/0000-0002-2815-5747"><i class="ai ai-orcid-square ai-fw"></i> ORCID</a></li>
-      
-      
-      
+            
     </ul>
   </div>
 </div>
@@ -254,25 +265,32 @@
           
         
         
-        
-        
-             
-        
-    
+            
         </header>
       
 
       <section class="page__content" itemprop="text">
-        <p>Hans P. Reiser is an Associate Professor at the
-<a href="https://en.ru.is/st/dcs/">Computer Science Department</a>, Reykjavik University, Iceland
-and member of the <a href="https://cress.ru.is/">CRESS</a> research center.
-He is also an affiliate member of the University of Passau, Germany.</p>
+        <p>Hans P. Reiser is a Full Professor (W3) and holds the
+<a href="https://www.fim.uni-passau.de/digisec">Chair of Digital Security</a> at the University of Passau, Germany.
+He also maintains an affiliation with the
+<a href="https://en.ru.is/st/dcs/">Computer Science Department</a> at Reykjavik University, Iceland,
+and the <a href="https://www.frostbyte.is">Frostbyte Cybersecurity Research Centre</a>.</p>
 
-<p>He graduated in computer science from the University of Erlangen-Nuremberg and holds a PhD (Dr. rer. nat.) in the field of fault-tolerant distributed systems from Ulm University. 
-Prior to joining Reykjavik University, he served as an Assistant Professor at the University of Lisbon, Portugal, and the University of Passau, Germany. He has also spent a semester as a visiting professor at Carnegie Mellon University in Pittsburgh, USA, and another semester as a visiting full professor at the Karlsruhe Institute of Technology, Germany.</p>
+<p>He earned his Diploma (Dipl.-Inf., equivalent to an M.Sc.) degree in Computer Science from the University of Erlangen–Nuremberg
+and received his PhD (Dr. rer. nat.) in fault-tolerant distributed systems from Ulm University.</p>
 
-<p>Hans P. Reiser’s research focuses on the security and reliability of distributed systems.</p>
+<p>Earlier in his career, he held Assistant Professor positions at the University of Lisbon, Portugal,
+and the University of Passau, Germany.
+He also spent a semester as a Visiting Professor at Carnegie Mellon University in Pittsburgh, USA,
+and another semester as a Visiting Full Professor at the Karlsruhe Institute of Technology (KIT), Germany.
+He joined Reykjavik University in January 2022 and served as an Associate Professor before returning to
+the University of Passau in July 2026.</p>
 
+<p>Hans P. Reiser’s research focuses on the security, reliability and resilience of distributed systems.</p>
+
+
+
+        
 
         
       </section>
@@ -323,7 +341,7 @@ Prior to joining Reykjavik University, he served as an Assistant Professor at th
 </div>
 -->
 
-<div class="page__footer-copyright">&copy; 2025 Hans P. Reiser. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2026 Hans P. Reiser. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
 
       </footer>
     </div>
